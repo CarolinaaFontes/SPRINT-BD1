@@ -1,0 +1,90 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="7661B59D-96A1-014A-B1B2-D1B2937B450C" name="T_HC_MEDICO">
+<createdBy>labsfiap</createdBy>
+<createdTime>2025-05-09 01:07:52 UTC</createdTime>
+<ownerDesignName>challenge_hc</ownerDesignName>
+<engineerTo>
+<item key="06CC3D54-0D25-2FDE-E4F9-1446A80733DB" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID_MEDICO" id="6F255429-2D78-30FA-C55B-919AAEEB6C6D">
+<createdBy>labsfiap</createdBy>
+<createdTime>2025-05-09 01:08:00 UTC</createdTime>
+<commentInRDBMS><![CDATA[Este atributo irá guardar o valor de chave primaria, que será gerada automaticamente em uma sequencia unica de 5 caracateres ]]></commentInRDBMS>
+<ownerDesignName>challenge_hc</ownerDesignName>
+<engineerTo>
+<item key="06CC3D54-0D25-2FDE-E4F9-1446A80733DB" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>5</dataTypeSize>
+<ownDataTypeParameters>5,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NR_CRM" id="7DFE9644-893B-5A7B-ACD8-1FD724F79016">
+<createdBy>labsfiap</createdBy>
+<createdTime>2025-05-09 01:08:22 UTC</createdTime>
+<commentInRDBMS><![CDATA[atributo ira guardar o valor do numeo de CRM DO MÉDICO, deve ser respeitado
+o formato de CRM, sigla do estado e numero de crm, respeitando pontos e barras]]></commentInRDBMS>
+<ownerDesignName>challenge_hc</ownerDesignName>
+<engineerTo>
+<item key="06CC3D54-0D25-2FDE-E4F9-1446A80733DB" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NM_MEDICO" id="C026ECC0-22AE-399A-A5BF-FD88AA434692">
+<createdBy>labsfiap</createdBy>
+<createdTime>2025-05-09 01:10:53 UTC</createdTime>
+<commentInRDBMS><![CDATA[Atributo para guardar o nome completo do profissional sem abreviações ]]></commentInRDBMS>
+<ownerDesignName>challenge_hc</ownerDesignName>
+<engineerTo>
+<item key="06CC3D54-0D25-2FDE-E4F9-1446A80733DB" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DS_ESPECIALIDADE" id="CEB38AAA-7B2F-2DD6-7E4D-D0BA0ECFFC62">
+<createdBy>labsfiap</createdBy>
+<createdTime>2025-05-09 01:11:27 UTC</createdTime>
+<commentInRDBMS><![CDATA[Atributo para guardar a descrição da especilidade do profissional ]]></commentInRDBMS>
+<ownerDesignName>challenge_hc</ownerDesignName>
+<engineerTo>
+<item key="06CC3D54-0D25-2FDE-E4F9-1446A80733DB" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="CDD29A26-36BD-F28D-975C-D8E7AA0E30F1" name="T_HC_MEDICO PK">
+<createdBy>labsfiap</createdBy>
+<createdTime>2025-05-09 01:08:43 UTC</createdTime>
+<ownerDesignName>challenge_hc</ownerDesignName>
+<engineerTo>
+<item key="06CC3D54-0D25-2FDE-E4F9-1446A80733DB" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>6F255429-2D78-30FA-C55B-919AAEEB6C6D</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

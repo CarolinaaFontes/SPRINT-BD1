@@ -29,18 +29,20 @@
 <dataTypeSize>5</dataTypeSize>
 <ownDataTypeParameters>5,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="ID_PACIENTE" id="242C06FA-2ACE-E6A1-14F2-938B388B75BF">
+<Attribute name="ID_PACIENTE" id="E6E07957-2AED-3DDA-F458-EE7E0A93B4A1">
 <createdBy>labsfiap</createdBy>
-<createdTime>2025-05-09 00:44:09 UTC</createdTime>
+<createdTime>2025-05-09 01:25:17 UTC</createdTime>
+<generatorID>6B198225-310F-F5EA-338D-237ED7A7FC1F</generatorID>
 <ownerDesignName>challenge_hc</ownerDesignName>
 <engineerTo>
 <item key="06CC3D54-0D25-2FDE-E4F9-1446A80733DB" value="true"/>
 </engineerTo>
+<referedAttribute>E2C73DB1-02B2-AC1F-CC68-E46FB19AD2A6</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT025</logicalDatatype>
 <dataTypeSize>5</dataTypeSize>
-<ownDataTypeParameters>5,,</ownDataTypeParameters>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="NM_LOGRADOURO" id="0499E685-3A5F-F436-2AF9-865FFD81FEF0">
 <createdBy>labsfiap</createdBy>

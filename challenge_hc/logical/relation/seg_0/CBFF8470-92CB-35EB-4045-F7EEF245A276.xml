@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="R_PACIENTE_MEDICO" directorySegmentName="seg_0" id="CBFF8470-92CB-35EB-4045-F7EEF245A276">
+<createdBy>labsfiap</createdBy>
+<createdTime>2025-05-09 01:14:24 UTC</createdTime>
+<ownerDesignName>challenge_hc</ownerDesignName>
+<engineerTo>
+<item key="06CC3D54-0D25-2FDE-E4F9-1446A80733DB" value="true"/>
+</engineerTo>
+<sourcePk>CDD29A26-36BD-F28D-975C-D8E7AA0E30F1</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>7661B59D-96A1-014A-B1B2-D1B2937B450C</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>61498467-FDE3-4B0B-8E42-DC1F8294D531</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

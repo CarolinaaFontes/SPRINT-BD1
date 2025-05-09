@@ -1,0 +1,105 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="61498467-FDE3-4B0B-8E42-DC1F8294D531" name="T_HC_CONSULTA">
+<createdBy>labsfiap</createdBy>
+<createdTime>2025-05-09 01:05:40 UTC</createdTime>
+<ownerDesignName>challenge_hc</ownerDesignName>
+<engineerTo>
+<item key="06CC3D54-0D25-2FDE-E4F9-1446A80733DB" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID_CONSULTA" id="A0B4D6F8-E375-F856-DE9B-C296EB933B50">
+<createdBy>labsfiap</createdBy>
+<createdTime>2025-05-09 01:05:50 UTC</createdTime>
+<commentInRDBMS><![CDATA[Este atributo irá guardar o valor de chave primaria, que será gerada automaticamente em uma sequencia unica de 5 caracateres ]]></commentInRDBMS>
+<ownerDesignName>challenge_hc</ownerDesignName>
+<engineerTo>
+<item key="06CC3D54-0D25-2FDE-E4F9-1446A80733DB" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>5</dataTypeSize>
+<ownDataTypeParameters>5,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID_PACIENTE" id="6253A782-F916-4685-A798-0BEDEA81EB74">
+<createdBy>labsfiap</createdBy>
+<createdTime>2025-05-09 01:14:08 UTC</createdTime>
+<generatorID>44A05C99-8987-6269-6A01-6B0E49900004</generatorID>
+<ownerDesignName>challenge_hc</ownerDesignName>
+<engineerTo>
+<item key="06CC3D54-0D25-2FDE-E4F9-1446A80733DB" value="true"/>
+</engineerTo>
+<referedAttribute>E2C73DB1-02B2-AC1F-CC68-E46FB19AD2A6</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>5</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID_MEDICO" id="603553C6-356F-0FB8-50F7-19360527A8D8">
+<createdBy>labsfiap</createdBy>
+<createdTime>2025-05-09 01:14:24 UTC</createdTime>
+<generatorID>CBFF8470-92CB-35EB-4045-F7EEF245A276</generatorID>
+<ownerDesignName>challenge_hc</ownerDesignName>
+<engineerTo>
+<item key="06CC3D54-0D25-2FDE-E4F9-1446A80733DB" value="true"/>
+</engineerTo>
+<referedAttribute>6F255429-2D78-30FA-C55B-919AAEEB6C6D</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>5</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DT_HR_CONSULTA" id="1FE1F876-4F70-6F32-B3F1-A7C683F3A5A2">
+<createdBy>labsfiap</createdBy>
+<createdTime>2025-05-09 01:15:00 UTC</createdTime>
+<commentInRDBMS><![CDATA[Atributo para armazenar o valor da data e hora que a consulta foi realizado]]></commentInRDBMS>
+<ownerDesignName>challenge_hc</ownerDesignName>
+<engineerTo>
+<item key="06CC3D54-0D25-2FDE-E4F9-1446A80733DB" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DS_MODALIDADE" id="863E457A-421F-E555-9B3B-AE78B47E9AB8">
+<createdBy>labsfiap</createdBy>
+<createdTime>2025-05-09 01:16:16 UTC</createdTime>
+<commentInRDBMS><![CDATA[Atributo para armazenar a descrição da modelalidade que a consulta foi feita:
+Virutal ou Presencial]]></commentInRDBMS>
+<ownerDesignName>challenge_hc</ownerDesignName>
+<engineerTo>
+<item key="06CC3D54-0D25-2FDE-E4F9-1446A80733DB" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="732D09E0-2B5A-C6B3-C8A6-98A8D5746A14" name="T_HC_CONSULTA PK">
+<createdBy>labsfiap</createdBy>
+<createdTime>2025-05-09 01:14:58 UTC</createdTime>
+<ownerDesignName>challenge_hc</ownerDesignName>
+<engineerTo>
+<item key="06CC3D54-0D25-2FDE-E4F9-1446A80733DB" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>A0B4D6F8-E375-F856-DE9B-C296EB933B50</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

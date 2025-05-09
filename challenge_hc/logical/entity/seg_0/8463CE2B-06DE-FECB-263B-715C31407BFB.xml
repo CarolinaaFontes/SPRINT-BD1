@@ -1,0 +1,105 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="8463CE2B-06DE-FECB-263B-715C31407BFB" name="T_HC_TELEFONE">
+<createdBy>labsfiap</createdBy>
+<createdTime>2025-05-09 01:19:31 UTC</createdTime>
+<ownerDesignName>challenge_hc</ownerDesignName>
+<engineerTo>
+<item key="06CC3D54-0D25-2FDE-E4F9-1446A80733DB" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID_TELEFONE" id="F2BB2D46-0E65-39B6-8123-916BDEF80EAB">
+<createdBy>labsfiap</createdBy>
+<createdTime>2025-05-09 01:19:45 UTC</createdTime>
+<commentInRDBMS><![CDATA[Este atributo irá guardar o valor de chave primaria, que será gerada automaticamente em uma sequencia unica de 5 caracateres ]]></commentInRDBMS>
+<ownerDesignName>challenge_hc</ownerDesignName>
+<engineerTo>
+<item key="06CC3D54-0D25-2FDE-E4F9-1446A80733DB" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>5</dataTypeSize>
+<ownDataTypeParameters>5,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NR_DDI" id="5771D684-452A-A607-70E4-95763305A76E">
+<createdBy>labsfiap</createdBy>
+<createdTime>2025-05-09 01:22:28 UTC</createdTime>
+<commentInRDBMS><![CDATA[armazenar o valor de ddi]]></commentInRDBMS>
+<ownerDesignName>challenge_hc</ownerDesignName>
+<engineerTo>
+<item key="06CC3D54-0D25-2FDE-E4F9-1446A80733DB" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>4</dataTypeSize>
+<ownDataTypeParameters>4,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NR_DDD" id="60530283-DCA4-8C5C-634F-4A6AC1016F51">
+<createdBy>labsfiap</createdBy>
+<createdTime>2025-05-09 01:22:56 UTC</createdTime>
+<commentInRDBMS><![CDATA[Atributo para guardar o valor de ddd do paciente]]></commentInRDBMS>
+<ownerDesignName>challenge_hc</ownerDesignName>
+<engineerTo>
+<item key="06CC3D54-0D25-2FDE-E4F9-1446A80733DB" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NR_NUMERO" id="ECBEFB53-A862-7E5F-873C-CF3BF0D2270C">
+<createdBy>labsfiap</createdBy>
+<createdTime>2025-05-09 01:23:33 UTC</createdTime>
+<commentInRDBMS><![CDATA[Atributo para armazenar o valor de numero de telefone seguindo a norma de acrescentar o 9 a frente do numero e o traço separando os 8 numeros]]></commentInRDBMS>
+<ownerDesignName>challenge_hc</ownerDesignName>
+<engineerTo>
+<item key="06CC3D54-0D25-2FDE-E4F9-1446A80733DB" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID_PACIENTE" id="1839F15A-3DF7-8E5D-4F7F-F5BE3D5F6C24">
+<createdBy>labsfiap</createdBy>
+<createdTime>2025-05-09 01:25:46 UTC</createdTime>
+<generatorID>7EC8C76F-4926-0F69-9194-CB57A461956F</generatorID>
+<ownerDesignName>challenge_hc</ownerDesignName>
+<engineerTo>
+<item key="06CC3D54-0D25-2FDE-E4F9-1446A80733DB" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>E2C73DB1-02B2-AC1F-CC68-E46FB19AD2A6</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>5</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="D1E1D0E3-AC51-4CD0-7EBA-BC429848A800" name="T_HC_TELEFONE PK">
+<createdBy>labsfiap</createdBy>
+<createdTime>2025-05-09 01:25:55 UTC</createdTime>
+<ownerDesignName>challenge_hc</ownerDesignName>
+<engineerTo>
+<item key="06CC3D54-0D25-2FDE-E4F9-1446A80733DB" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>F2BB2D46-0E65-39B6-8123-916BDEF80EAB</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

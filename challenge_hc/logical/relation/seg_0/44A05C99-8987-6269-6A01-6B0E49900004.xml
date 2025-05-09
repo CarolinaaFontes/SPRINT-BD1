@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="R_PACIENTE_CONSULTA" directorySegmentName="seg_0" id="44A05C99-8987-6269-6A01-6B0E49900004">
+<createdBy>labsfiap</createdBy>
+<createdTime>2025-05-09 01:14:08 UTC</createdTime>
+<ownerDesignName>challenge_hc</ownerDesignName>
+<engineerTo>
+<item key="06CC3D54-0D25-2FDE-E4F9-1446A80733DB" value="true"/>
+</engineerTo>
+<sourcePk>601D167D-FD0B-E7B5-CAFB-065BA95B86C9</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>23FFD174-E4DB-E864-DE44-B9E9E0954478</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>61498467-FDE3-4B0B-8E42-DC1F8294D531</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

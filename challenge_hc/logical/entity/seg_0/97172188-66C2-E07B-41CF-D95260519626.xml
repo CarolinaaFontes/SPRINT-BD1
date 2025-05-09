@@ -1,0 +1,77 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="97172188-66C2-E07B-41CF-D95260519626" name="T_HC_APLICACAO">
+<createdBy>labsfiap</createdBy>
+<createdTime>2025-05-09 01:26:51 UTC</createdTime>
+<ownerDesignName>challenge_hc</ownerDesignName>
+<engineerTo>
+<item key="06CC3D54-0D25-2FDE-E4F9-1446A80733DB" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID_APLICACAO" id="3186735C-4253-F089-1DF3-53598FA5C4DB">
+<createdBy>labsfiap</createdBy>
+<createdTime>2025-05-09 01:27:02 UTC</createdTime>
+<commentInRDBMS><![CDATA[Este atributo irá guardar o valor de chave primaria, que será gerada automaticamente em uma sequencia unica de 5 caracateres ]]></commentInRDBMS>
+<ownerDesignName>challenge_hc</ownerDesignName>
+<engineerTo>
+<item key="06CC3D54-0D25-2FDE-E4F9-1446A80733DB" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>5</dataTypeSize>
+<ownDataTypeParameters>5,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID_PACIENTE" id="82B249E9-3ECD-50A5-CFD3-4B2134E0BCEF">
+<createdBy>labsfiap</createdBy>
+<createdTime>2025-05-09 01:27:39 UTC</createdTime>
+<generatorID>C96B0D7E-05BA-B269-B4C6-99819D5DF13E</generatorID>
+<ownerDesignName>challenge_hc</ownerDesignName>
+<engineerTo>
+<item key="06CC3D54-0D25-2FDE-E4F9-1446A80733DB" value="true"/>
+</engineerTo>
+<referedAttribute>E2C73DB1-02B2-AC1F-CC68-E46FB19AD2A6</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>5</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="TP_APLICACAO" id="F3B73BDF-F1B2-115C-EE72-924E37E47ECC">
+<createdBy>labsfiap</createdBy>
+<createdTime>2025-05-09 01:29:47 UTC</createdTime>
+<commentInRDBMS><![CDATA[Atributo para guardar as informações tecnicas da IA utilizada para o paciente
+]]></commentInRDBMS>
+<ownerDesignName>challenge_hc</ownerDesignName>
+<engineerTo>
+<item key="06CC3D54-0D25-2FDE-E4F9-1446A80733DB" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>300</dataTypeSize>
+<ownDataTypeParameters>300,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="809C8E33-FD33-4E03-3832-0912E0AA09B4" name="T_HC_APLICACAO PK">
+<createdBy>labsfiap</createdBy>
+<createdTime>2025-05-09 01:30:46 UTC</createdTime>
+<ownerDesignName>challenge_hc</ownerDesignName>
+<engineerTo>
+<item key="06CC3D54-0D25-2FDE-E4F9-1446A80733DB" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>3186735C-4253-F089-1DF3-53598FA5C4DB</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>
